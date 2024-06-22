@@ -1,3 +1,4 @@
-module github.com/theNewDynamic/gohugo-theme-ananke
+module github.com/maiani/pavia
 
-go 1.14
+go 1.22.3
+
