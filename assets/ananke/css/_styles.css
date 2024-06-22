@@ -1,4 +1,39 @@
 /* Put your custom styles here and run `npm start` from the "src" directory on */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'saintamour';
+  src: url('/assets/fonts/Saint_Amour.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --natural-white: #f8f7ed;
+  --my-gray : #555;
+}
+
+/* body {
+  padding-top: 5rem; 
+  background-color: var(--natural-white);
+  color: var(--my-gray)
+} */
+
+header.cover {
+  height: 100vh; 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  position: relative;
+}
+
 
 #TableOfContents ul li {
   margin-bottom: 1em;
@@ -17,4 +52,101 @@
 
 .nested-links a{
   overflow-wrap: break-word;
+}
+
+/* .top-nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  z-index: 1000; 
+  background-color: var(--natural-white);
+  color: var(--my-gray);
+} */
+
+
+/* .top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  z-index: 1000; 
+  background-color: var(--natural-white);
+  color: var(--my-gray);
+} */
+
+.top-nav a {
+  color: var(--my-gray);; /* Ensure links inherit the text color */
+}
+
+.top-nav a:hover {
+  color: var(--my-gray);; /* Ensure hover state is also correct */
+}
+
+.float-right {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  max-width: 50%;
+}
+
+.float-left {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  max-width: 50%;
+}
+
+hr::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.home-section {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.home-section .float-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.home-section .float-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.home-section {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+}
+
+.home-section-content {
+  flex: 1; /* Take up remaining space */
+}
+
+.tllogo {
+  height: 4rem;
+}
+
+.responsive-iframe {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+header.cover {
+  height: 90vh;
 }

@@ -1,0 +1,17 @@
+<div class="home-section center mw8 pv3 ph1 ph1-ns flex flex-column-reverse flex-row-ns">
+  {{ if eq (.Get "figurePosition") "float-left" }}
+    <figure class="fl-ns w-40-ns w-100">
+      <img src="{{ .Get "figure" }}" alt="{{ .Get "figureAlt" }}">
+    </figure>
+  {{ end }}  
+
+  <div class="home-section-text measure">
+    {{ .Inner | markdownify }}
+  </div>
+
+  {{ if eq (.Get "figurePosition") "float-right" }}
+    <figure class="fr-ns w-40-ns w-100">
+      <img src="{{ .Get "figure" }}" alt="{{ .Get "figureAlt" }}">
+    </figure>
+  {{ end }}  
+</div>
