@@ -18,6 +18,7 @@
 :root {
   --natural-white: #f8f7ed;
   --my-gray : #555;
+  --my-green: #3c4c24;
 }
 
 @media (min-width: 60em) {
