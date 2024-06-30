@@ -1,13 +1,7 @@
-/* Put your custom styles here and run `npm start` from the "src" directory on */
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
-.cinzel {
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  /* font-weight: <weight>; */
-  font-style: normal;
-}
-
+/* Custom Font Faces */
 @font-face {
   font-family: 'saintamour';
   src: url('/assets/fonts/Saint_Amour.ttf') format('truetype');
@@ -15,34 +9,32 @@
   font-style: normal;
 }
 
+/* Root Variables */
 :root {
   --natural-white: #f8f7ed;
-  --my-gray : #555;
+  --my-gray: #555;
   --my-green: #3c4c24;
 }
 
-@media (min-width: 60em) {
-  .iframe-container {
-    width: 1000px; /* or any other fixed width */
-    height: 1200px; /* corresponding height for the aspect ratio */
-  }
+/* General Styles */
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
 }
 
-@media (max-width: 60em) {
-  .iframe-container {
-    /* width: 1000px;  */
-    height: 1200px; /* corresponding height for the aspect ratio */
-  }
+.olive {
+  color: var(--my-green);
 }
 
 header.cover {
-  height: 100vh; 
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
 }
-
 
 #TableOfContents ul li {
   margin-bottom: 1em;
@@ -56,41 +48,18 @@ header.cover {
   margin-bottom: 2rem;
   border-left: 4px solid #ccc;
   padding-left: 1rem;
-
 }
 
-.nested-links a{
+.nested-links a {
   overflow-wrap: break-word;
 }
 
-/* .top-nav {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5rem;
-  z-index: 1000; 
-  background-color: var(--natural-white);
-  color: var(--my-gray);
-} */
-
-
-/* .top-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5rem;
-  z-index: 1000; 
-  background-color: var(--natural-white);
-  color: var(--my-gray);
-} */
-
 .top-nav a {
-  color: var(--my-gray);; /* Ensure links inherit the text color */
+  color: var(--my-gray); /* Ensure links inherit the text color */
 }
 
 .top-nav a:hover {
-  color: var(--my-gray);; /* Ensure hover state is also correct */
+  color: var(--my-gray); /* Ensure hover state is also correct */
 }
 
 .float-right {
@@ -116,6 +85,8 @@ hr::after {
 .home-section {
   overflow: hidden;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center; /* Vertically center the content */
 }
 
 .home-section .float-right {
@@ -126,11 +97,6 @@ hr::after {
 .home-section .float-left {
   float: left;
   margin-right: 20px;
-}
-
-.home-section {
-  display: flex;
-  align-items: center; /* Vertically center the content */
 }
 
 .home-section-content {
@@ -156,6 +122,17 @@ hr::after {
   border: 0;
 }
 
-header.cover {
-  height: 90vh;
+/* Media Queries */
+@media (min-width: 60em) {
+  .iframe-container {
+    width: 1000px; /* or any other fixed width */
+    height: 1200px; /* corresponding height for the aspect ratio */
+  }
+}
+
+@media (max-width: 60em) {
+  .iframe-container {
+    /* width: 1000px;  */
+    height: 1200px; /* corresponding height for the aspect ratio */
+  }
 }
