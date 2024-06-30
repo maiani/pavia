@@ -20,11 +20,19 @@
   --my-gray : #555;
 }
 
-/* body {
-  padding-top: 5rem; 
-  background-color: var(--natural-white);
-  color: var(--my-gray)
-} */
+@media (min-width: 60em) {
+  .iframe-container {
+    width: 1000px; /* or any other fixed width */
+    height: 1200px; /* corresponding height for the aspect ratio */
+  }
+}
+
+@media (max-width: 60em) {
+  .iframe-container {
+    /* width: 1000px;  */
+    height: 1200px; /* corresponding height for the aspect ratio */
+  }
+}
 
 header.cover {
   height: 100vh; 
