@@ -3,8 +3,8 @@
 
 /* Custom Font Faces */
 @font-face {
-  font-family: 'saintamour';
-  src: url('/assets/fonts/Saint_Amour.ttf') format('truetype');
+  font-family: 'SaintAmour';
+  src: url('/fonts/Saint_Amour.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -20,14 +20,23 @@
 .cinzel {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
-  /* font-weight: <weight>; */
   font-style: normal;
 }
 
 .saintamour {
-  font-family: "saintamour", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "SaintAmour", sans-serif;
+  font-optical-sizing: auto; 
   font-style: normal;
+}
+
+.f-headline-xl {
+  font-size: 10rem; /* Default for larger screens */
+}
+
+@media screen and (max-width: 48em) {
+  .f-headline-xl {
+    font-size: 6rem; /* Smaller font size for small screens */
+  }
 }
 
 .olive {
